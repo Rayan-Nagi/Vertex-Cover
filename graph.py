@@ -132,15 +132,6 @@ def get_segments(streets, street_lines, intersections):
     return street_lines, intersections
 
 
-
-# For the below portion of the code (between the two lines of #) I have refered to:
-# https://github.com/MiaYao/Vertex-Cover-optimization-problem-solve-by-python/blob/master/a1-ece650.py
-
-# The below 4 functions (between the 2 lines of #) were written in python 2
-# so I had to strip them from the original code, change commands to python3, change the input and output arguments and fit them into my code  
-
-###################################(Beginning of cited code)#######################################################
-
 def is_intersected(intersections, street_lines, temp_list, V_ids, maxid, V, E):
 
     for intersection in intersections:
@@ -252,7 +243,6 @@ def is_between(line_i, line_j, x, y):
             return False
     else:
         return False
-######################################(End of cited code)###################################################
 
 
 def main ():

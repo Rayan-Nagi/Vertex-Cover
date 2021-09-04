@@ -8,10 +8,6 @@
 using namespace std;
 
 
-// To be able to write the below code, I have refered to:
-//https://github.com/ganesh292/Optimized-Traffic-Camera-Placement/blob/master/Project/rgen.cpp
-// I have just made small modifications, I have mostly used the online code
-
 struct point
 {
   int x;
@@ -347,7 +343,6 @@ void send_stdout(vector<point> streetseg,int nlseg,vector<string> streetName)
 }
 
 
-
 bool inter_same_st(vector<point> streetseg,int nlseg)
 
 {
@@ -375,8 +370,6 @@ bool inter_same_st(vector<point> streetseg,int nlseg)
 }
 
 
-
-
 // Given three colinear points p, q, r, the function checks if
 // point q lies on line segment 'pr'
 bool onSegment(point p, point q, point r)
@@ -389,7 +382,6 @@ bool onSegment(point p, point q, point r)
 }
 
 
-
 int orientation(point p, point q, point r)
 {
  
@@ -399,7 +391,6 @@ int orientation(point p, point q, point r)
 
   return (val > 0)? 1: 2; // clock or counterclock wise
 }
-
 
 
 bool doIntersect(point p1, point q1, point p2, point q2)
